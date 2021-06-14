@@ -9,7 +9,11 @@ public class ExerciseMaven {
         System.out.println("Enter Something");
         String userInput = scanner.nextLine();
 
-        System.out.println(StringUtils.isNumeric(userInput));
+        if (StringUtils.isNumeric(userInput) == true){
+            System.out.println( "\'" + userInput + "\'" +  " is a number!");
+        } else {
+            System.out.println("\'" + userInput + "\'" +  " is not a number :)");
+        }
         System.out.println(StringUtils.swapCase(userInput));
         System.out.println(StringUtils.reverse(userInput));
 
